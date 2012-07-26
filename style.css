@@ -1,0 +1,299 @@
+@media print {
+
+	body {
+		font-size: medium;
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* -------------------------------------- */
+
+	#main_menu {
+		display: none;
+	}
+	
+	/* -------------------------------------- */
+
+	#content {
+		margin: 10pt 0;
+	}
+
+	#content dt {
+		margin-bottom: 0.3em;
+		font-size: small;
+	}
+
+	#content dd {
+		font-size: small;
+		margin: 0 0 0.3em 20pt;
+		padding: 0 0 0 1em;
+	}
+
+	#content ul {
+		margin: 0 0 0 10pt;
+		padding: 0;
+	}
+
+	#content ul li {
+		list-style: square;
+	}
+	
+	#content h1, h2 {
+		font-family: serif;
+	}
+	
+	#content p {
+		font-size: smaller;
+		max-width: 40em;
+		display: block;
+		text-align: justify;
+	}
+	
+	#content code {
+		display: block;
+		white-space: pre;
+		margin-left: 2em;
+		padding: 0.5em;
+		width: 76em;
+		font-family: monospace;
+		overflow: hidden;
+		font-size: medium;
+	}
+
+	/* -------------------------------------- */
+
+	.validator, .maxime {
+		display: none;
+	}
+
+}
+
+@media screen 
+
+@media screen and (min-device-width: 481px) {
+}
+
+@media screen {
+	body {
+		background-color: #eee;
+		color: gray;
+		font-size: medium;
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: gray;
+		background-color: inherit;
+	}
+
+	/* -------------------------------------- */
+
+	#main_menu {
+		margin: 10pt auto;
+		padding: 15px 0;
+
+		border: 1px solid gray;
+
+		width: 60%;
+		min-width: 500px;
+		overflow: hidden;
+
+
+		font-family: serif;
+		font-size: large;
+
+		background-color: white;
+		color: gray;
+	}
+
+	#main_menu p, #main_menu a:hover {
+		color: gray;
+		background-color: inherit;
+	}
+
+	#main_menu p {
+		letter-spacing: 0.2em;
+		font-variant: small-caps;
+	}
+
+	#main_menu a {
+		color: inherit;
+		background-color: inherit;
+		text-decoration: none;
+		font-weight: bold;
+		line-height: 120%;
+	}
+	
+	#main_menu a[title]:after {
+		content: attr(title);
+		display: block;
+		font-size: smaller;
+		font-weight: normal;
+		text-align: right;
+		visibility: hidden;
+		padding-top: 4pt;
+        padding-left: 3em;
+		line-height: 100%;
+	}
+
+	#main_menu a[title]:hover:after {
+		color: silver;
+		background-color: inherit;
+		visibility: visible;
+	}
+
+	#main_menu li a:hover {
+		color: white;
+		background-color: #222;
+	}
+	
+	#main_menu li li a:hover {
+		color: white;
+		background-color: #333;
+	}
+
+	#main_menu ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	#main_menu li {
+		display: block;
+		border-top: 1px dotted silver;
+	}
+	
+	#main_menu li.important {
+		background-color: gray;
+		color: white;
+	}
+	
+	#main_menu li.important a {
+		background-color: gray;
+		color: white;
+	}
+	
+	#main_menu li:last-child {
+		border-bottom: 1px dotted silver;
+	}
+
+	#main_menu li li:last-child {
+		border-bottom: none;
+	}
+
+	#main_menu li li {
+		line-height: 80%;
+	}
+
+	#main_menu li a, #main_menu li p {
+		display: block;
+		margin: 0;
+		padding: 0.3em 0.3em 0.3em 1em;
+	}
+
+	#main_menu li li a {
+		padding-left: 3em;
+	}
+
+	/* -------------------------------------- */
+
+	#content {
+		color: black;
+		background-color: white;
+		border: 1px solid gray;
+		padding: 10pt;
+		margin: 10pt;
+	}
+
+	#content:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+
+	#content a {
+		color: black;
+		background-color: inherit;
+	}
+
+	#content dt {
+		margin-bottom: 0.3em;
+		font-size: small;
+	}
+
+	#content dd {
+		font-size: small;
+		margin: 0 0 0.3em 20pt;
+		padding: 0 0 0 1em;
+		border-left: 1px dotted gray;
+	}
+
+	#content ul {
+		margin: 0 0 0 10pt;
+		padding: 0;
+	}
+
+	#content ul li {
+		list-style: square;
+	}
+
+	#content h1 {
+		font-family: serif;
+		color: gray;
+	}
+	
+	#content h2 {
+		font-family: serif;
+		color: gray;
+	}
+
+	#content h1:after {
+		content: "";
+		display: block;
+		border-top: 2pt solid gray;
+		width: 18em;
+	}
+	
+	#content h2:after {
+		content: "";
+		display: block;
+		border-top: 0.9pt solid gray;
+		width: 14em;
+	}
+
+	#content p {
+		font-size: smaller;
+		max-width: 40em;
+		display: block;
+		text-align: justify;
+	}
+
+	#content code {
+		color: #ddd;
+		background-color: black;
+		display: block;
+		white-space: pre;
+		margin: auto;
+		padding: 0.5em;
+		max-width: 76em;
+        overflow: hidden;
+		font-family: monospace;
+		font-size: medium;
+		line-height: 150%;
+	}
+
+	/* -------------------------------------- */
+
+	.validator, .maxime {
+		font-family: monospace;
+		font-size: small;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+}
